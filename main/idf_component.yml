@@ -1,0 +1,5 @@
+dependencies:
+  esp_lcd_touch_gt911: ==1.1.1
+  esp_lvgl_port:
+    version: '*'
+  idf: '>=5.0'

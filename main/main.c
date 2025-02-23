@@ -66,9 +66,10 @@
 #define EXAMPLE_TOUCH_I2C_SCL       (GPIO_NUM_20)
 #define EXAMPLE_TOUCH_I2C_SDA       (GPIO_NUM_19)
 
+/* ideal frequency is 24.6 MHz but causes instability with CPU load */
 #define EXAMPLE_LCD_PANEL_25HZ_RGB_TIMING()  \
     {                                               \
-        .pclk_hz = 24.6 * 1000 * 1000,                \
+        .pclk_hz = 18 * 1000 * 1000,                \
         .h_res = EXAMPLE_LCD_H_RES,                 \
         .v_res = EXAMPLE_LCD_V_RES,                 \
         .hsync_pulse_width = 4,                    \
